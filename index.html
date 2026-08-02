@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柔筋堂 ｜ 骨往筋來整復推拿養生中心</title>
+    <!-- 引入 Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, "Noto Sans TC", sans-serif;
+            background-color: #fcfbfa;
+            color: #4a3e3d;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://unsplash.com') no-repeat center center/cover;
+            padding: 160px 0 120px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .bg-cream {
+            background-color: #f5efe6;
+        }
+
+        .card-price {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .card-price:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn-line {
+            background-color: #06C755;
+            color: white;
+            border: none;
+        }
+
+        .btn-line:hover {
+            background-color: #05b04b;
+            color: white;
+        }
+
+        .btn-call {
+            background-color: #8d7b68;
+            color: white;
+            border: none;
+        }
+
+        .btn-call:hover {
+            background-color: #6f5f51;
+            color: white;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #8d7b68;
+            margin-right: 15px;
+        }
+
+        /* 行動端浮動聯絡按鈕 */
+        .sticky-contact {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sticky-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            color: white;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .sticky-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="#">柔筋堂</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">服務價目</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡預約</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺 Banner -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">柔筋堂</h1>
+            <p class="lead fs-3 mb-4">骨往筋來整復推拿養生中心</p>
+            <p class="mb-5 fs-5 text-light opacity-75">全預約制 ｜ 經絡穴道調理 ｜ 肌肉與筋膜放鬆</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://line.me/ti/p/~david310111" class="btn btn-line btn-lg px-4 py-3 fw-bold rounded-pill"><i
+                        class="bi bi-line me-2"></i>LINE 線上預約</a>
+                <a href="tel:0953133123" class="btn btn-call btn-lg px-4 py-3 fw-bold rounded-pill"><i
+                        class="bi bi-telephone-fill me-2"></i>電話撥打聯絡</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 關於我們區塊 -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4 position-relative pb-2 border-bottom border-2 border-dark"
+                        style="width: fit-content;">專業經絡調理</h2>
+                    <p class="lead mb-4">我們秉持專業、細心的精神，針對現代人因工作壓力、姿勢不良造成的全身痠痛僵硬，提供客製化的調理服務。</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6 d-flex align-items-center"><i
+                                class="bi bi-check-circle-fill text-success me-2"></i> 專業經絡與筋膜放鬆</div>
+                        <div class="col-sm-6 d-flex align-items-center"><i
+                                class="bi bi-check-circle-fill text-success me-2"></i> 骨盤與骨架平衡整復</div>
+                        <div class="col-sm-6 d-flex align-items-center"><i
+                                class="bi bi-check-circle-fill text-success me-2"></i> Google 地圖 5 星好評</div>
+                        <div class="col-sm-6 d-flex align-items-center"><i
+                                class="bi bi-check-circle-fill text-success me-2"></i> 全預約制舒適環境</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://unsplash.com" alt="按摩放鬆" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務價目區塊 -->
+    <section id="services" class="section-padding bg-cream">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">現場服務項目與費用</h2>
+                <p class="text-muted">深層解壓，找回身體輕盈感</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- 60分鐘 -->
+                <div class="col-md-4">
+                    <div class="card card-price h-100 p-4 text-center">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="card-title fw-bold mb-3">全身整復舒緩</h4>
+                                <h3 class="text-danger fw-bold mb-4">$1,200 <span class="fs-6 text-muted">/ 元</span>
+                                </h3>
+                                <hr class="my-3">
+                                <p class="card-text text-muted">時間：60 分鐘</p>
+                                <p class="card-text">適合常態性肩頸僵硬、腰酸背痛，快速放鬆肌肉群。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 90分鐘 -->
+                <div class="col-md-4">
+                    <div class="card card-price h-100 p-4 text-center border border-2 border-dark position-relative">
+                        <span
+                            class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark px-3 py-2">熱門推薦</span>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="card-title fw-bold mb-3">經絡與筋膜調理</h4>
+                                <h3 class="text-danger fw-bold mb-4">$1,580 <span class="fs-6 text-muted">/ 元</span>
+                                </h3>
+                                <hr class="my-3">
+                                <p class="card-text text-muted">時間：90 分鐘</p>
+                                <p class="card-text">針對全身 12~14 經絡進行深層解壓，配合筋膜放鬆，舒緩效果更持久。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 120分鐘 -->
+                <div class="col-md-4">
+                    <div class="card card-price h-100 p-4 text-center">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="card-title fw-bold mb-3">頂級全面深層護理</h4>
+                                <h3 class="text-danger fw-bold mb-4">$1,950 <span class="fs-6 text-muted">/ 元</span>
+                                </h3>
+                                <hr class="my-3">
+                                <p class="card-text text-muted">時間：120 分鐘</p>
+                                <p class="card-text">全身骨架平衡整復與深度舒壓，包含頭頸肩與顱薦椎全面調理。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡與資訊區塊 -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">營業與預約資訊</h2>
+                <p class="text-muted">本店採全預約制，敬請提前預約</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- 店家資訊 -->
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded-4 h-100">
+                        <h4 class="fw-bold mb-4">店家資訊</h4>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-geo-alt-fill contact-icon"></i>
+                            <div>
+                                <strong>店家地址</strong><br>
+                                105 台北市松山區復興北路 179 號 7 樓之三（南京復興站旁）
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-clock-fill contact-icon"></i>
+                            <div>
+                                <strong>營業時間</strong><br>
+                                週一、二、四至週日：10:30 AM - 09:30 PM（每週三公休）
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                            <div>
+                                <strong>電話聯絡</strong><br>
+                                0953-133-123
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-line contact-icon"></i>
+                            <div>
+                                <strong>預約 Line ID</strong><br>
+                                david310111
+                            </div>
+                        </div>
+
+                        <!-- 快速預約按鈕區 -->
+                        <div class="d-flex flex-column gap-2">
+                            <a href="https://line.me"
+                                class="btn btn-line btn-lg py-2.5 fw-bold rounded-3 shadow-sm text-center fs-6"><i
+                                    class="bi bi-line me-2"></i>點我加 LINE 預約</a>
+                            <a href="tel:0953133123"
+                                class="btn btn-call btn-lg py-2.5 fw-bold rounded-3 shadow-sm text-center fs-6"><i
+                                    class="bi bi-telephone-fill me-2"></i>點我撥打預約電話</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google 地圖嵌入區 -->
+                <div class="col-md-6">
+                    <div class="rounded-4 overflow-hidden shadow-sm h-100" style="min-height: 350px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.402900598579!2d121.54435180000002!3d25.0543299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a95b90da7697%3A0xf587eb217ec54817!2z5p-U562L5aCCL-mqqOW-gOeti-S-hue2k-e1oeiqv-eQhuaOqOaLv-S4reW_gw!5e0!3m2!1szh-TW!2stw!4v1785595977435!5m2!1szh-TW!2stw"
+                            width="100%" height="100%" style="border:0; min-height: 350px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾區塊 -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0 opacity-70">© 2026 柔筋堂 ｜ 骨往筋來整復推拿養生中心. All Rights Reserved.</p>
+    </footer>
+
+    <!-- 行動端右下角常駐浮動聯絡鈕 -->
+    <div class="sticky-contact d-lg-none">
+        <a href="tel:0953133123" class="sticky-btn btn-call" title="撥打電話"><i class="bi bi-telephone-fill"></i></a>
+        <a href="https://line.me" class="sticky-btn btn-line" title="LINE 預約"><i class="bi bi-line"></i></a>
+    </div>
+
+    <!-- 引入 Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
